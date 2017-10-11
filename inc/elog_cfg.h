@@ -32,65 +32,65 @@
 #include <rtthread.h>
 
 /* enable log output. default open this macro */
-#if defined(PKG_ELOG_ENABLE_OUTPUT)
+#if defined(PKG_EASYLOGGER_ENABLE_OUTPUT)
     #define ELOG_OUTPUT_ENABLE
 #endif
 /* setting static output log level */
-#if defined(PKG_ELOG_OUTPUT_LVL_ASSERT)
+#if defined(PKG_EASYLOGGER_OUTPUT_LVL_ASSERT)
     #define ELOG_OUTPUT_LVL                  ELOG_LVL_VERBOSE
-#elif defined(PKG_ELOG_OUTPUT_LVL_ERROR)
+#elif defined(PKG_EASYLOGGER_OUTPUT_LVL_ERROR)
     #define ELOG_OUTPUT_LVL                  ELOG_LVL_ERROR
-#elif defined(PKG_ELOG_OUTPUT_LVL_WARN)
+#elif defined(PKG_EASYLOGGER_OUTPUT_LVL_WARN)
     #define ELOG_OUTPUT_LVL                  ELOG_LVL_WARN
-#elif defined(PKG_ELOG_OUTPUT_LVL_INFO)
+#elif defined(PKG_EASYLOGGER_OUTPUT_LVL_INFO)
     #define ELOG_OUTPUT_LVL                  ELOG_LVL_INFO
 #else
     #define ELOG_OUTPUT_LVL                  ELOG_LVL_VERBOSE
 #endif
 /* enable assert check */
-#if defined(PKG_ELOG_ENABLE_ASSERT)
+#if defined(PKG_EASYLOGGER_ENABLE_ASSERT)
     #define ELOG_ASSERT_ENABLE
 #endif
 /* buffer size for every line's log */
-#if defined(PKG_ELOG_LINE_BUF_SIZE)
-    #define ELOG_LINE_BUF_SIZE               PKG_ELOG_LINE_BUF_SIZE
+#if defined(PKG_EASYLOGGER_LINE_BUF_SIZE)
+    #define ELOG_LINE_BUF_SIZE               PKG_EASYLOGGER_LINE_BUF_SIZE
 #endif
 /* output line number max length */
 #define ELOG_LINE_NUM_MAX_LEN                5
 /* output filter's tag max length */
-#if defined(PKG_ELOG_FILTER_TAG_MAX_LEN)
+#if defined(PKG_EASYLOGGER_FILTER_TAG_MAX_LEN)
     #define ELOG_FILTER_TAG_MAX_LEN          30
 #endif
 /* output filter's keyword max length */
-#if defined(PKG_ELOG_FILTER_KW_MAX_LEN)
+#if defined(PKG_EASYLOGGER_FILTER_KW_MAX_LEN)
     #define ELOG_FILTER_KW_MAX_LEN           16
 #endif
 /* output newline sign */
-#if defined(PKG_ELOG_NEWLINE_SIGN_CR)
+#if defined(PKG_EASYLOGGER_NEWLINE_SIGN_CR)
     #define ELOG_NEWLINE_SIGN                "\r"
-#elif defined(PKG_ELOG_NEWLINE_SIGN_LF)
+#elif defined(PKG_EASYLOGGER_NEWLINE_SIGN_LF)
     #define ELOG_NEWLINE_SIGN                "\n"
 #else
     #define ELOG_NEWLINE_SIGN                "\r\n"
 #endif
 /* enable log color */
-#if defined(PKG_ELOG_ENABLE_COLOR)
+#if defined(PKG_EASYLOGGER_ENABLE_COLOR)
     #define ELOG_COLOR_ENABLE
 #endif
 /* enable asynchronous output mode */
-#if defined(PKG_ELOG_ENABLE_ASYNC_OUTPUT)
+#if defined(PKG_EASYLOGGER_ENABLE_ASYNC_OUTPUT)
     #define ELOG_ASYNC_OUTPUT_ENABLE
 #endif
 /* buffer size for asynchronous output mode */
-#if defined(PKG_ELOG_ASYNC_OUTPUT_BUF_SIZE)
-    #define ELOG_ASYNC_OUTPUT_BUF_SIZE        PKG_ELOG_ASYNC_OUTPUT_BUF_SIZE
+#if defined(PKG_EASYLOGGER_ASYNC_OUTPUT_BUF_SIZE)
+    #define ELOG_ASYNC_OUTPUT_BUF_SIZE        PKG_EASYLOGGER_ASYNC_OUTPUT_BUF_SIZE
 #endif
 /* each asynchronous output's log which must end with newline sign */
-#if defined(PKG_ELOG_ASYNC_LINE_OUTPUT)
+#if defined(PKG_EASYLOGGER_ASYNC_LINE_OUTPUT)
     #define ELOG_ASYNC_LINE_OUTPUT
 #endif
 ///* asynchronous output mode using POSIX pthread implementation */
-#if defined(PKG_ELOG_ASYNC_OUTPUT_USING_PTHREAD)
+#if defined(PKG_EASYLOGGER_ASYNC_OUTPUT_USING_PTHREAD)
     #define ELOG_ASYNC_OUTPUT_USING_PTHREAD
 #endif
 ///* enable buffered output mode */
@@ -98,7 +98,7 @@
 ///* buffer size for buffered output mode */
 //#define ELOG_BUF_OUTPUT_BUF_SIZE             (ELOG_LINE_BUF_SIZE * 10)
 /* enable flash plugin */
-#if defined(PKG_ELOG_ENABLE_PLUGIN_FLASH)
+#if defined(PKG_EASYLOGGER_ENABLE_PLUGIN_FLASH)
     #define ELOG_FLASH_ENABLE
 #endif
 
