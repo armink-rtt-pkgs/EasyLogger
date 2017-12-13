@@ -12,6 +12,6 @@ if GetDepend(['PKG_ELOG_ENABLE_PLUGIN_FLASH']):
     src    += Glob('plugins/flash/*.c')
     path   += [cwd + '/plugins/flash']
 
-group = DefineGroup('EasyLogger', src, depend = [''], CPPPATH = path)
+group = DefineGroup('EasyLogger', src, depend = ['PKG_USING_EASYLOGGER'], CPPPATH = path)
 
 Return('group')
