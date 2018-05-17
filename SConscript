@@ -8,7 +8,7 @@ src    += Glob('port/*.c')
 
 path    = [cwd + '/inc']
 
-if GetDepend(['PKG_ELOG_ENABLE_PLUGIN_FLASH']):
+if GetDepend(['PKG_EASYLOGGER_ENABLE_PLUGIN_FLASH']):
     src    += Glob('plugins/flash/*.c')
     path   += [cwd + '/plugins/flash']
 

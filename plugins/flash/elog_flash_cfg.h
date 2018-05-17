@@ -33,8 +33,8 @@
 /* EasyLogger flash log plugin's using buffer mode */
 #define ELOG_FLASH_USING_BUF_MODE
 /* EasyLogger flash log plugin's RAM buffer size */
-#if defined(PKG_ELOG_FLASH_BUF_SIZE)
-    #define ELOG_FLASH_BUF_SIZE              PKG_ELOG_FLASH_BUF_SIZE
+#if defined(PKG_EASYLOGGER_FLASH_BUF_SIZE)
+    #define ELOG_FLASH_BUF_SIZE              PKG_EASYLOGGER_FLASH_BUF_SIZE
 #endif
 
 #endif /* _ELOG_FLASH_CFG_H_ */
